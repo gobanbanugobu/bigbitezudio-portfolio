@@ -46,7 +46,7 @@ export default function Home() {
       </header>
 
       <div>
-        <h1 style={{}}>We are Digital marketing Company in Coimbatore</h1>
+        <h1 style={{color:"white",textAlign:"center"}}>We are Digital marketing Company in Coimbatore</h1>
       </div>
     </div>
   );
