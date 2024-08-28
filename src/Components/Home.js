@@ -47,6 +47,7 @@ export default function Home() {
 
       <div>
         <h1 style={{textAlign:"center"}}>We are Digital marketing Company in Coimbatore</h1>
+  <h1 style={{textAlign:"center"}}>We are Digital marketing Company in Coimbatore</h1>
       </div>
     </div>
   );
