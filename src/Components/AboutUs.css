@@ -1,0 +1,748 @@
+
+
+.aboutUsContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .aboutUsBackgroundImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+  }
+  
+  .aboutUsContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 100%, transparent 50%);
+    z-index: 0;
+  }
+  
+  .aboutUsBackgroundImageHeadings {
+    position: absolute;
+    z-index: 1;
+    padding: 0rem 9rem;
+    text-align: left; /* Adjust alignment */
+    bottom: 1rem;
+  }
+  
+  .aboutUsBackgroundImageHeadings h1 {
+    font-size: 4rem; /* Use responsive font sizing */
+    color: white;
+    font-weight: 600;
+    line-height: 1.2; /* Improve readability */
+    margin-bottom: 0.8rem; /* Add spacing */
+  }
+  
+  .aboutUsBackgroundImageHeadings span {
+    color: var(--primaryColor);
+  }
+  
+  .aboutUsBackgroundImageHeadings p {
+    color: white;
+  }
+  
+  .aboutUsBackgroundImageHeadings .btn-light {
+    text-transform: lowercase;
+    padding: 0.7rem 1.8rem; /* Adjust padding for a balanced button */
+    font-weight: 500;
+    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Add shadow for a lifted effect */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  .aboutUsSuccessStoryContent {
+    text-align: center; /* Center-align text for better appearance */
+    margin: 0.6rem 6.2rem; /* Center the container horizontally */
+    padding:1.2rem; /* Add padding for better spacing */
+}
+
+.aboutUsSuccessStoryContent h1 {
+  padding: 10px 0px;
+    font-size: 2.2em; /* Adjust the font size for the heading */
+    font-weight: bold; /* Make the heading bold */
+    color:#333; /* Set a color for the heading */
+}
+
+.aboutUsSuccessStoryContent p {
+  text-align: justify;
+    font-size: 1.1em; /* Adjust the font size for the paragraph */
+    line-height: 1.6; /* Improve readability by increasing line height */
+    color: #555; /* Set a color for the paragraph text */
+}
+
+.aboutUsSuccessStoryContent b {
+    color: #1a73e8; /* Highlight the company name */
+}
+.aboutUsIconsetContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem; /* Add padding to create space around the content */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border-radius: 0.7rem; /* Rounded corners */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 18.75rem; /* Optional: Set a max-width for better control */
+  text-align: center; /* Center text alignment */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+.aboutUsIconsetContainer:hover {
+  transform: translateY(-10px); /* Hover effect to lift the container */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.aboutUsIconsetContainer img {
+  width: 4.3rem;
+  margin-bottom: 1rem; /* Add spacing below the image */
+}
+
+.aboutUsIconsetContainer h4 {
+  color: var(--primaryColor);
+  font-size: 1.5rem; /* Increase font size for better readability */
+  margin-bottom: 0.5rem; /* Add spacing below the heading */
+}
+
+.aboutUsIconsetContainer p {
+  color: #555; /* Subtle color for paragraph text */
+  font-size: 1rem; /* Adjust font size for clarity */
+  line-height: 1.5; /* Improve readability */
+}
+.aboutUsIconsetOverAllContainer{
+  display: flex;
+  gap: 1rem;
+margin: 1.2rem 6rem;
+
+}
+.weAreHereToHelpHeading{
+  font-size: 2.8rem; /* Large font size for emphasis */
+  color: #333; /* Dark gray color for contrast */
+  text-align: center; /* Center the heading */
+  margin: 3rem 0 0 0; /* Vertical margin for spacing */
+  font-weight: 700; /* Bold font for prominence */
+  letter-spacing: 0.05rem; /* Slight letter spacing for a clean look */
+}
+.employeeGroupImages{
+  display: flex;
+  position:relative;
+  margin: 1.9rem 0 3.1rem 0;
+  scroll-snap-type: x mandatory; /* Snap scrolling for carousel effect */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  
+}
+.employeeImages {
+ display: flex; /* This will align the images in a row */
+  position: relative;
+  min-width: 15.625rem; /* Set a fixed width for the image container */
+  background: #fff; /* White background to prevent shadow overlay */
+
+}
+
+.employeeImages img {
+  width: 100%; /* Make the image fill the container */
+  display: block;
+}
+.employeesconnect{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width overlay */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  padding: 0.8rem;
+  text-align: center; /* Center align text */
+}
+.employeesconnect h5{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+}
+.employeesconnect h5:hover {
+  color: #0077b5; /* Change text color on hover */
+}
+.employeesconnect a{
+  text-decoration: none;
+  color: #0077b5; /* LinkedIn blue color */
+  background-color: white;
+  border-radius: 50%; /* Make it circular */
+  padding: 0.31rem 0.62rem; /* Adjust padding for better size */
+  font-size:25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.employeesconnect p{
+  color: white;
+  font-size: 1rem; /* Adjust font size for readability */
+  transition: color 0.3s ease; /* Transition for hover effect */
+}
+.employeesconnect a:hover {
+  background-color: #0077b5; /* Change background color on hover */
+  color: white; /* Change icon color on hover */
+}
+
+
+.employeeImages img::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 50%; /* Start shadow from halfway down */
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent overlay */
+  border-radius: 0 0 10px 10px; /* Match the border radius of the image */
+  z-index: 1; /* Ensure it appears above the image */
+}
+
+.aboutUsBusinessEfficientContainer{
+  margin:0.6rem 0rem ;
+  height: 25rem;
+  width: 21rem;
+  background-color: #fff; /* Background color for the card */
+   box-shadow: 0px 0px 0.62rem 0.62rem rgba(0, 0, 0, 0.2); /* Shadow effect */ 
+   overflow: hidden;
+   width: 100%; /* Full width in the flex container */
+   max-width: 22rem; /* Limit width for larger screens */
+   border-radius: 0.5rem; /* Rounded corners for the card */
+
+
+}
+
+.aboutUsBusinessEfficient{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.2rem;
+  text-align: center; /* Center text inside */
+}
+.aboutUsBusinessEfficient h1{
+  color: var(--primaryColor);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family:initial;
+}
+.aboutUsBusinessEfficient img{
+  width: 7rem;
+   height: auto; /* Maintain aspect ratio */
+}
+.aboutUsBusinessEfficient p{
+font-size:1.2rem;
+font-family: 'Times New Roman', Times, serif;
+text-align: center;
+}
+.achieveBusiness{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1; /* Allow flexible width in the flex container */
+  max-width:37.5rem; /* Restrict width */
+  text-align: center;
+  gap: 0.5rem;
+}
+.achieveBusiness h4{
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  
+
+}
+.achieveBusiness h2 {
+  font-size: 2rem;
+}
+.achieveBusiness p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+.achieveBusiness b{
+  color: var(--primaryColor);
+  
+}
+.overallAchievingContainer{
+  display: flex;
+  flex-wrap: wrap; /* Ensure responsiveness by wrapping items */
+  margin: 2rem auto; 
+  gap: 3.5rem; /* Space between child elements */
+  align-items: flex-start; /* Align items at the top */
+  justify-content:space-evenly; /* Center content horizontally */
+}
+.achieveBusiness h6{
+color: white;
+font-weight: bolder;
+padding: 1rem 3.5rem 1rem 1.5rem; 
+border-top-left-radius: 0.7rem;
+border-bottom-left-radius: 0.7rem;
+border-top-right-radius: 0.7rem;
+border-bottom-right-radius: 4rem;
+background-color: var(--primaryColor);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+display: inline-block; /* Prevent the element from stretching */
+font-size: 1rem; /* Adjust the font size */
+text-transform: uppercase; /* Optional: Make text uppercase for emphasis */
+letter-spacing: 0.05rem; /* Slight letter spacing for a cleaner look */
+}
+
+.whatWeDo h5 {
+  color: var(--primaryColor);
+  font-weight:bold;
+  margin:1.5rem 0 0.2rem 0; /* Spacing below the h5 heading */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.whatWeDo h2 {
+  color: #333; /* Dark color for the main heading */
+  font-size: 2rem; /* Adjust font size */
+  margin-bottom: 0.5rem; /* Spacing below the h2 heading */
+  line-height: 1.3; /* Line height for better readability */
+}
+
+.whatWeDo ul {
+  list-style-type: none; /* Remove default list styling */
+}
+.whatWeDo li {
+  margin-bottom:0.7rem; /* Space between list items */
+  line-height: 1.6; /* Line height for better readability */
+  text-align: justify;
+}
+.whatWeDo span{
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+.whatWeDo li::before {
+  content: '✓'; /* White tick mark */
+  margin-right: 0.3rem; /* Space between icon and text */
+  color: var(--primaryColor); /* Icon color */
+
+
+}
+.whatWeDoImg {
+  flex: 1; /* Allow the image to grow */
+  max-width: 100%; /* Prevent the image from overflowing */
+  height: auto; /* Maintain aspect ratio */
+  min-width: 300px; /* Minimum width for the image */
+  border-radius:0.5rem; /* Optional: rounded corners */
+  margin-top: 5rem;
+}
+.whatWeDoContainer {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center items */
+  justify-content: space-evenly; /* Space between text and image */
+  gap: 3rem; /* Space between the content and image */
+  padding: 2.5rem; /* Padding around the container */
+  max-width:75rem; /* Constrain the maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+.whatWeDo {
+  flex: 1; /* Allow the section to grow */
+  min-width: 300px; /* Minimum width for the section */
+}
+.aboutDataWithContainer {
+  display: flex;
+  flex-direction: row; /* Keep both sections in the same row */
+  justify-content: space-evenly;
+  gap: 3rem; /* Gap between the two containers */
+  margin: 2rem 5rem; /* Center the container */
+  max-width: 75rem; /* Set a max-width for better control */
+}
+
+/* Container for the Why Choose section */
+.aboutWhyChooseContainer {
+  flex: 1; /* Allow this container to grow and share space equally */
+  max-width: 50%; /* Restrict the max width to half the parent container */
+}
+
+/* Why Choose Heading */
+.aboutWhyChoose h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem; /* Increased spacing for a cleaner look */
+  line-height: 1.3;
+}
+
+/* Why Choose List */
+.aboutWhyChoose ul {
+  padding-left: 1rem; /* Add padding for list alignment */
+}
+
+.aboutWhyChoose li {
+  list-style: none;
+  margin-bottom: 0.7rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Span for list items */
+.aboutWhyChoose span {
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+/* Custom list icon */
+.aboutWhyChoose li::before {
+  content: '✓';
+  color: green;
+  font-size: 1rem;
+  margin-right: 0.5rem; /* Add spacing after the icon */
+}
+
+/* Container for green image section */
+.greenImageWithContentContainer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 1.5rem; /* Adjusted gap between items */
+  flex: 1; /* Allow this container to grow and share space equally */
+  max-width: 50%; /* Restrict the max width to half the parent container */
+  margin: 6.8rem 0;
+}
+
+/* Individual green image box */
+.greenImageWithContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #e0ffe0;
+  padding: 1rem; /* Increased padding for better spacing */
+  border-radius: 0.5rem;
+  border: 2px solid #006400; /* Increased border width */
+  max-width: 100%; /* Ensure responsiveness */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effect */
+}
+.greenImageWithContent:hover {
+  transform: scale(1.05); /* Slightly enlarge the container on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Green image properties */
+.greenImageWithContent img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid green;
+  background-color: var(--primaryColor);
+  padding: 0.3125rem;
+}
+
+/* Green image paragraph */
+.greenImageWithContent p {
+  margin: 0;
+  font-size: 1rem;
+  color: #006400;
+}
+/* Style for the company logo */
+.aboutCompanyLogo {
+  width: 100%; /* Make the logo responsive */
+  max-width: 18.75rem; /* Set a maximum width for the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin-bottom: 1rem; /* Add space below the image */
+}
+
+/* Card styling */
+.aboutFormCard {
+  margin: 0.5rem 5rem; /* Center the card with auto margins */
+  padding: 1rem; /* Add padding inside the card */
+  border-radius: 1.5rem; /* Adjust the corner rounding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(40, 167, 69, 0.5); /* Add a green shadow at the bottom */
+  position: relative; /* For pseudo-element positioning if needed */
+}
+
+/* Card body flex container */
+.aboutFormCardBody {
+  display: flex;
+  flex-direction:row; /* Stack elements vertically */
+  align-items: center; /* Center align content */
+  justify-content: center;
+  gap: 2.5rem; /* Add space between elements */
+}
+
+/* Form title styling */
+.consultationForm h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333; /* Dark color for the heading */
+  margin-bottom: 1.5rem; /* Space below the heading */
+}
+
+/* Form fields container */
+.inputForms {
+  display: flex;
+  gap: 1.5rem; /* Space between input fields */
+  justify-content: center; /* Center inputs in the form */
+}
+
+/* Input box styling */
+.inputFormsBox {
+  margin-bottom: 2rem;
+  width: 100%; /* Full width on small screens */
+  width:18.75rem; /* Maximum width for input boxes */
+  padding: 0.5rem; /* Add padding for better input visibility */
+  border-radius: 0.5rem; /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inner shadow */
+}
+
+/* Button styling */
+.consultationForm button {
+  margin-bottom:3.125rem;
+  width: 100%; /* Full width button */
+  max-width: 39rem; /* Maximum width for the button */
+  padding: 0.5rem 1rem; /* Button padding */
+  background-color: #28a745; /* Success green background */
+  border: none;
+  border-radius: 0.5rem;
+  color: white; /* White text */
+  font-size: 1.1rem; /* Larger font size for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Button hover effect */
+.consultationForm button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+
+  @media screen and (max-width: 767px) {
+    .aboutCompanyLogo {
+      width: 100%; /* Full width of the container */
+      max-width:9.3rem; /* Set a smaller maximum width for mobile */
+      height: auto; /* Maintain the aspect ratio */
+      margin-bottom: 0rem; /* Keep space below the logo */
+    }
+      /* Adjust the card margins for mobile screens */
+  .aboutFormCard {
+    margin: 0.5rem 1rem; /* Less margin for smaller screens */
+    padding: 0rem;
+  }
+
+  /* Stack the logo and form vertically */
+  .aboutFormCardBody {
+    flex-direction: column;
+    gap: 0rem; /* Reduce the gap for smaller screens */
+  }
+
+  /* Adjust form title font size for mobile */
+  .consultationForm h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Stack input fields vertically on mobile */
+  .inputForms {
+    flex-direction: column;
+    gap: 0rem; /* Reduce the gap between input fields */
+  }
+
+  .inputFormsBox {
+    margin-bottom: 0.75rem;
+    width: 100%; /* Full width on small screens */
+  width: 15.62rem; /* Maximum width for input boxes */
+    padding: 0.5rem; /* Add padding for better input visibility */
+  }
+
+  /* Adjust the button size for mobile */
+  .consultationForm button {
+    width: 100%; /* Full width on mobile */
+    max-width: 100%; /* No max width restriction */
+    margin-bottom: 0.5rem;
+  }
+    .greenImageWithContent {
+      gap: 0.5rem;
+      padding: 0.7rem; /* Increased padding for better spacing */
+      border-radius: 0.5rem;
+      border: 2px solid #006400; /* Increased border width */
+    }
+    
+    .greenImageWithContent p {
+      font-size: 0.9rem;  
+    }
+    .aboutDataWithContainer {
+      display: flex;
+      flex-direction:column; /* Keep both sections in the same row */
+      gap: 0rem; /* Gap between the two containers */
+      margin: 1rem 1rem; /* Center the container */
+    }
+    .greenImageWithContentContainer {
+    
+      margin: 0.5rem 0.5rem;
+    }
+  
+    .aboutWhyChooseContainer,
+    .greenImageWithContentContainer {
+      max-width: 100%; /* Make the containers take full width on smaller screens */
+      gap:0.7rem;
+    }
+    .aboutWhyChoose {
+      padding: 1rem 0.3rem 0.3rem 0.3rem; /* Reduce padding for smaller screens */
+ }
+  
+    .aboutWhyChoose h2 {
+      font-size:1.4rem ; /* Slightly smaller font size for mobile */
+    }
+  
+  
+ 
+    .whatWeDoContainer {
+      padding: 0rem 1rem;
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the left */
+      gap: 0.5rem;
+    }
+  
+    .whatWeDoImg {
+
+      margin: 0px; /* Add some space above the image */
+    }
+    .whatWeDo h2{
+      font-size:1.5rem ;
+    }
+    .employeeImages { 
+       min-width:100%; /* Set a fixed width for the image container */  
+     }
+    .achieveBusiness h6{
+      padding: 0.7rem 3.5rem 0.5rem 1.5rem; 
+
+      }
+    .achieveBusiness p {
+   text-align:left;
+   padding: 0 0.5rem;
+    }
+    .achieveBusiness h2 {
+      font-size: 1.5rem;
+    }
+    .aboutUsBusinessEfficient img{
+      width: 5rem;
+    
+    }
+    .aboutUsBusinessEfficient h1{
+      font-size: 2.5rem;
+    }
+
+    .aboutUsBusinessEfficient{
+      gap: 1.5rem;
+      padding: 0.5rem;
+      text-align: center; /* Center text inside */
+    }
+    .overallAchievingContainer {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center;
+      margin: 0.5rem ;
+      gap:1rem;
+    }
+    .achieveBusiness{
+      padding: 0.5rem;
+    }
+  
+    .aboutUsBusinessEfficientContainer,
+    .achieveBusiness {
+      height:auto;
+      width: 100%;
+      max-width: 18.75rem; /* Remove max-width on small screens */
+    }
+    .weAreHereToHelpHeading {
+      font-size: 1.8rem; /* Slightly smaller font size for tablets */
+      margin: 2rem 0.8rem 0rem 0.8rem; /* Reduce vertical margin for smaller screens */
+    }
+    .aboutUsIconsetOverAllContainer {
+      flex-direction: column; /* Stack containers vertically */
+      align-items: center;
+      justify-content: center;
+      margin: 1.5rem; /* Adjust margin for smaller screens */
+      gap: 1.25rem;
+    }
+  
+    .aboutUsIconsetContainer {
+      width: 100%; /* Allow full width */
+      max-width: 20rem; /* Set a max-width */
+      padding: 1.2rem 0.8rem; /* Adjust padding */
+    }
+  
+    .aboutUsSuccessStoryContent {
+      text-align:left; /* Center-align text for better appearance */
+      margin: 1.3rem 1.9rem; /* Center the container horizontally */
+      padding: 0px; /* Add padding for better spacing */
+  }
+  
+  .aboutUsSuccessStoryContent h1 {
+    text-align: center;
+      font-size: 1.6em; /* Adjust the font size for the heading */
+  }
+  
+  .aboutUsSuccessStoryContent p {
+    
+    font-size: 0.95em; /* Further adjust paragraph font size */
+  }
+  
+    .aboutUsBackgroundImageHeadings {
+        padding:0rem 1.9rem 0rem 1.9rem; /* Reduce padding */
+        text-align: center; /* Center align text for mobile */
+    }
+
+    .aboutUsBackgroundImageHeadings h1 {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .aboutUsBackgroundImageHeadings p {
+        font-size: 0.89rem; /* Adjust paragraph font size */
+    }
+
+    .aboutUsBackgroundImageHeadings .btn-light {
+        padding: 0.6rem 0.7rem; /* Adjust button padding */
+        font-size: 0.8rem; /* Adjust button font size */
+    }
+  }
+
+ 
+  @media screen and ( min-width:766px) and (max-width: 1024px) {
+    .aboutCompanyLogo {
+      max-width: 15rem; /* Adjust max width for tablet */
+      margin-bottom: 1rem; /* Maintain space below the logo */
+    }
+  
+    .aboutFormCard {
+      margin: 0.5rem 2rem; /* Reduce margin for tablet */
+      padding: 1rem; /* Maintain padding */
+    }
+  
+    .aboutFormCardBody {
+      flex-direction: row; /* Keep row layout for tablets */
+      gap: 1.5rem; /* Reduce gap for a tighter layout */
+    }
+  
+    .consultationForm h1 {
+      font-size: 1.75rem; /* Slightly smaller font size for tablets */
+    }
+  
+    .inputForms {
+      gap: 1rem; /* Reduce space between input fields */
+    }
+  
+    .inputFormsBox {
+      width: 100%; /* Full width on tablets */
+      max-width: 16rem; /* Adjust maximum width */
+    }
+  
+    .consultationForm button {
+      max-width: 100%; /* Allow full width */
+      padding: 0.5rem 1rem; /* Maintain padding */
+    }
+  }
+
+  

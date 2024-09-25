@@ -1,0 +1,294 @@
+/* General Styling */
+.arrow {
+  display: inline-block;
+  margin-left: 0.3125rem; /* 5px */
+  border: solid black;
+  border-width: 0 0.125rem 0.125rem 0;
+  padding: 0.1875rem; /* 3px */
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow on hover */
+.dropdown:hover .arrow {
+  transform: rotate(225deg);
+}
+
+/* Service Box Styling */
+.serviceBox {
+  height: auto;
+  width: 100%; /* Adjusted to fit screen width */
+  max-width: 75rem; /* 1200px */
+  position: absolute;
+  top: 6.25rem; /* 100px */
+  left: 0;
+  right: 0; /* Center service box horizontally */
+  margin: 0 auto; /* Center service box */
+  background-color: white;
+  padding: 0.625rem; /* 10px */
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  cursor: pointer;
+}
+
+/* Service Links */
+.serviceLinks {
+  font-size: 1rem; /* 16px */
+  color: black;
+}
+
+/* Border Container */
+.border {
+  border-radius: 0.9375rem; /* 15px */
+  overflow: hidden;
+  width: 95%;
+  position: absolute;
+  margin: 1.25rem 1.875rem; /* 20px 30px */
+  z-index: 1000;
+}
+
+/* Navbar Styling */
+.nav {
+  background-color: white;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0.3125rem; /* 5px */
+  box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Added shadow for separation */
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5625rem; /* 25px */
+  margin: 0;
+  padding: 0;
+}
+
+.companyName {
+  color: inherit;
+  font-weight: 700;
+  font-size: 2.1875rem; /* 35px */
+  text-transform: uppercase;
+  margin-left: 0.625rem; /* 10px */
+  cursor: pointer;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem; /* 8px */
+}
+
+.nav li a:hover {
+  color: white;
+  background-color: var(--primaryColor);
+  padding: 0.5rem; /* 8px */
+  border-radius: 0.3125rem; /* 5px */
+  font-weight: 500;
+}
+
+.logo {
+  width: 3.75rem; /* 60px */
+  height: 3.75rem; /* 60px */
+}
+
+.menu-icon {
+  flex-direction: column;
+  cursor: pointer;
+  display: none; /* Hidden by default, shown on small screens */
+}
+
+.menu-icon div {
+  width: 1.5625rem; /* 25px */
+  height: 0.3125rem; /* 5px */
+  background-color: var(--primaryColor);
+  margin: 0.1875rem 0; /* 3px */
+}
+
+.popOverBox {
+  position: relative; /* Set position relative for adjustments */
+  margin: 1.25rem auto; /* Center the box with top/bottom margin */
+  width: 90%; /* Responsive width */
+  max-width: 100%; /* Set a max width for larger screens */
+  max-height: 80vh; /* 75vh */
+  background-color: #fff; /* Background color (change as needed) */
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  padding: 0px;
+  margin-left: -3.125rem; /* -50px */
+}
+
+.popOverBox .popover-header {
+  padding: 0.625rem; /* 10px */
+  position: sticky; /* Use sticky positioning to keep the header fixed */
+  top: 0; /* Stick the header to the top */
+}
+
+/* Main services section layout */
+.services-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.25rem; /* 20px */
+  background-color: #f9f9f9;
+}
+
+/* Individual service categories */
+.service-category {
+  flex: 1;
+  min-width: 12.5rem; /* 200px */
+  margin: 0.625rem; /* 10px */
+}
+
+.service-category ul li h2 {
+  transition: color 0.3s ease;
+  font-size: 1.5rem; /* 24px */
+  color: #333;
+}
+
+.service-category ul li h2:hover {
+  color: var(--primaryColor); /* Darker shade on hover */
+  text-decoration: underline; /* Underline on hover */
+  cursor: pointer;
+}
+
+/* Unordered list for services */
+.service-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling each list item */
+.service-category ul li {
+  margin: 0.9375rem 0; /* 15px */
+}
+
+/* Link styling for service items */
+.service-category ul li a {
+  text-decoration: none;
+  font-size: 1rem; /* 16px */
+  color: black; /* Link color */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.service-category ul li a:hover {
+  color: var(--primaryColor); /* Darker shade on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+@media screen and (max-width: 766px) {
+  .popOverBox {
+      top: 0px;
+      width: 95%; /* Adjust for smaller screens */
+      max-height: 60vh; /* Slightly reduce height on small devices */
+      margin: 0px 0.3125rem; /* 5px */
+  }
+  .popOverBox .popover-header {
+      padding: 0.625rem; /* 10px */
+      position: sticky; /* Use sticky positioning to keep the header fixed */
+      top: 0; /* Stick the header to the top */
+  }
+  .services-section {
+      flex-direction: column; /* Stack categories vertically on smaller screens */
+  }
+  .service-category {
+      margin: 0.625rem 0; /* 10px */
+  }
+  .border {
+      margin: 0.625rem; /* 10px */
+      border-color: var(--primaryColor);
+      position: absolute;
+  }
+
+  .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0.125rem; /* 2px */
+      margin: 0px;
+      border: none;
+      position: relative;
+      z-index: 1000;
+  }
+
+  .companyName {
+      font-size: 1.5625rem; /* 25px */
+  }
+
+  .nav-right {
+      display: none;
+      width: 100%;
+  }
+
+  .nav-right.open {
+      display: block;
+  }
+
+  .nav ul {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0.625rem; /* 10px */
+      gap: 0.3125rem; /* 5px */
+  }
+
+  .nav li {
+      margin: 0.625rem 0; /* 10px */
+  }
+
+  .menu-icon {
+      display: flex;
+      top: 0.9375rem; /* 15px */
+      right: 1.25rem; /* 20px */
+      position: absolute;
+      align-items: center;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  /* Adjust the popOverBox for medium screens */
+  .popOverBox {
+      width: 90%; /* Slightly reduced width for medium screens */
+      max-height: 70vh; /* Limit height to 70% of viewport height */
+      margin: 1.25rem auto; /* Center the box with margin */
+  }
+
+  .popOverBox .popover-header {
+      padding: 0.9375rem; /* 15px */
+  }
+
+  /* Adjust the services-section for medium screens */
+  .services-section {
+      flex-direction: row; /* Keep categories in a row */
+      flex-wrap: wrap; /* Allow wrapping */
+  }
+
+  .service-category {
+      flex: 1 1 45%; /* Allow flexibility and some margin */
+      margin: 0.625rem; /* 10px */
+  }
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem; /* 25px */
+    margin: 0;
+    padding: 0;
+  }
+}

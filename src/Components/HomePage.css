@@ -1,0 +1,397 @@
+
+.homePageFirstRowContainer {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-evenly; /* Space between text and image */
+    margin: 2rem 5rem;
+}
+
+.homePageFirstRowFirstSpan{
+    background-color: var(--primaryColor);
+    color: white;
+    padding: 0px 2rem;
+}
+.homePageFirstRowSecondSpan{
+    color: var(--primaryColor);
+}
+.homePageFirstRow h1{
+    font-family: var(--headingFont);
+    font-size: 4rem;
+font-weight: 500;
+margin-bottom: 20px;
+line-height: 1.2; /* Improve line spacing */
+}
+.homePageFirstRow p{
+    max-width:40rem; /* Limit paragraph width for better readability */
+    line-height: 1.6; /* Increase line spacing */
+    text-align: justify;
+}
+.homePageKeyboardImg{
+    width:25rem;
+    max-width: 100%; /* Ensure image responsiveness */
+  
+}
+.homePageSecondRowOverallContainer{
+    display: flex;
+    margin: 5rem;
+    justify-content: space-evenly;
+    gap: 5rem;
+
+}
+.homePageSecondRowSecondColoumn{
+    width: 50%;
+}
+.homePageSecondRowFirstColoumn h1{
+    font-size: 2.7rem;
+    line-height: 1.2;
+    font-weight:600;
+}
+.homePageSecondRowFirstColoumn h1 span{
+    color: var(--primaryColor);
+}
+.homePageMicksetImg{
+    width: 100%;
+   max-width: 25rem;
+   margin-top: 1rem;
+}
+.homePageSecondRowSecondColoumnImgDiv{
+    display: flex;
+    align-items: center;
+ gap: 1rem;
+ margin-top: 1rem;
+ padding-top: 1rem;
+}
+.homePageSecondRowSecondColoumnImages{
+    background-color: var(--primaryColor);
+    width:3.125rem;
+    padding:0.625rem;
+    border-radius:0.65rem;
+    object-fit: contain;
+}
+
+.homePageSecondRowSecondColoumnParagraph{
+    color: #666;
+    max-width: 100%;
+    line-height: 1.5;
+    padding: 0.25rem 0 0 4rem;
+ 
+}
+.homePageFourthRowList li{
+    color: #666;
+    text-align: justify;
+}
+.homePageBuildingImg{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+}
+.homePageFifthRowOverallContainer{
+    display: flex;
+    align-items: center;
+    background-color: var(--primaryColor);
+    justify-content: space-between;
+    gap: 5rem;
+}
+.homePageFifthRowContentContainer h1{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+
+}
+.homePageFifthRowContentContainer h1 span{
+    color:black;
+}
+.homePageFifthRowContentContainer p{
+    color: white;
+    line-height: 1.6;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.homePageGreenContainer{
+    width:6.25rem;
+    background-color: #3DD47E;
+    padding:1.875rem;
+    height: auto;
+    object-fit: contain;
+    padding: 1.5rem;
+    right: 0;
+}
+.homePageTopNotchHeading{
+    margin-top: 1rem;
+    font-size: 2.5rem !important;
+}
+.homePageChooseBigBiteZudio {
+    padding: 0rem 2rem;
+    background-color: #f8f9fa; /* Light background for better contrast */
+    border-radius: 10px; /* Adds a modern, rounded look */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+}
+
+.homePageChooseBigBiteZudio h2 {
+    text-align: center;
+    font-size: 2.85rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #333; /* Strong, readable color */
+}
+
+.homePageChooseBigBiteZudio h2 span {
+    color: var(--primaryColor); /* Primary color highlight */
+}
+
+.dashedBorder {
+    border-top: 4px dashed var(--primaryColor); /* Keeps it prominent */
+    width:95%; /* Centered shorter dashed line */
+    margin: 0.5rem auto 2rem; /* Adds spacing above and below */
+}
+
+.homePageChooseBigBiteZudio ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.homePageChooseBigBiteZudio ul li {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.homePageChooseBigBiteZudio ul li::before {
+    content: '\2022'; /* Unicode bullet point */
+    color: var(--primaryColor);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.homePageChooseBigBiteZudio ul li b {
+    color: #333; /* Makes the bold text stand out more */
+}
+
+    
+
+
+@media screen and (max-width: 766px) {
+    .homePageChooseBigBiteZudio {
+        padding: 1rem 1rem;
+        margin: 0 auto 0rem auto;
+    }
+
+    .homePageChooseBigBiteZudio h2 {
+        font-size: 2.2rem;
+    }
+
+    .homePageChooseBigBiteZudio ul li {
+        font-size: 1rem;
+        padding-left: 1.5rem;
+    }
+    .homePageTopNotchHeading{
+        font-size:1.75rem !important;
+    }
+    
+    .homePageGreenContainer{
+        width:3rem;
+        padding: 0.75rem;
+        rotate: 90deg;
+        
+    }
+    .homePageFifthRowContentContainer p{
+padding: 0 1.5rem;
+        text-align: justify;
+    }
+    .homePageFifthRowContentContainer h1{
+
+        font-weight: 700;
+        font-size: 2rem;
+       text-align: center;
+    
+    }
+    .homePageFifthRowOverallContainer{
+        flex-direction: column;
+        gap: 1rem;
+    }
+   
+    .homePageSecondRowSecondColoumnParagraph{
+       
+        line-height: 1.5;
+        padding: 0rem 0 0 2.5rem;
+        text-align: justify;
+    }
+    .homePageSecondRowSecondColoumnImgDiv{
+        display: flex;
+        align-items: center;
+     gap: 0.5rem;
+     margin-top: 0.5rem;
+     padding-top: 0.25rem;
+    }
+
+    .homePageSecondRowSecondColoumnImages{
+        width:2rem;
+        padding:0.5rem;
+    }
+ 
+    .homePageSecondRowFirstColoumn h1{
+        font-size: 2rem;
+        line-height: 1.2;
+        font-weight:500;
+   text-align: center;
+    }
+    .homePageSecondRowOverallContainer{
+        flex-direction: column;
+        margin: 3rem 1.5rem;
+        gap: 1rem;
+    
+    }
+    .homePageSecondRowFirstColoumn{
+        width: 100%;
+    }
+    .homePageSecondRowSecondColoumn{
+    width: 100%;
+    }
+    
+    .homePageFirstRowContainer {
+        flex-direction: column; /* Stack content vertically on small screens */
+       text-align: center;
+        margin: 1rem 1.5rem;
+    }
+
+    .homePageFirstRow h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .homePageKeyboardImg {
+        width: 250px; /* Reduce image size */
+        margin: 1.5rem auto 0 auto; /* Center image and add top margin */
+    }
+
+    .homePageFirstRow p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .homePageTopNotchHeading{
+        font-size:1.75rem !important;
+    }
+    .homePageFifthRowOverallContainer {
+        flex-direction:row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .homePageBuildingImg {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .homePageFifthRowContentContainer {
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    .homePageFifthRowContentContainer h1 {
+        font-size: 2.2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .homePageFifthRowContentContainer h1 span {
+        color:black;
+    }
+
+    .homePageFifthRowContentContainer p {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .homePageGreenContainer {
+        width:4.3rem;
+        height: auto;
+        margin-top: 1.5rem;
+    }
+    .homePageSecondRowOverallContainer {
+     display: flex;
+        margin: 2rem 2rem; /* Reduce margin for tablet view */
+        gap: 2rem;
+    }
+
+    /* First Column Adjustments */
+    .homePageSecondRowFirstColoumn h1 {
+        font-size: 2.5rem; /* Slightly reduce font size for headings */
+        line-height: 1.3;
+        font-weight: 600; /* Adjust font weight */
+        text-align: center; /* Center the heading */
+    }
+
+    .homePageMicksetImg {
+        width: 100%;
+        max-width: 20rem; /* Reduce image width slightly */
+        margin-top: 1.5rem; /* Adjust margin for spacing */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Second Column Adjustments */
+    .homePageSecondRowSecondColoumn {
+        width: 50%; /* Make second column take full width */
+    }
+
+    .homePageSecondRowSecondColoumnImgDiv {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem; /* Reduce gap between image and text */
+        margin-top: 1rem;
+        padding-top: 0.5rem; /* Adjust padding */
+    }
+
+    .homePageSecondRowSecondColoumnImages {
+        width: 2.5rem; /* Reduce image size for icons */
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .homePageSecondRowSecondColoumnParagraph {
+        color: #666;
+        max-width: 100%;
+        line-height: 1.4;
+        padding: 0 0 0 3rem; /* Adjust padding for proper alignment */
+        text-align: justify; /* Ensure text is justified for readability */
+    }
+    .homePageFirstRowContainer {
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 4rem;
+gap: 3rem;
+    }
+    .homePageFirstRow h1 {
+        font-size: 2.8rem; /* Slightly larger than mobile */
+        line-height: 1.3;
+        margin-bottom: 1rem; /* Reduce margin for better spacing */
+    }
+    .homePageFirstRow p {
+        max-width: 100%; /* Full width */
+        font-size: 1.1rem; /* Slightly larger than mobile */
+        line-height: 1.6; /* Adequate line spacing */
+    }
+    .homePageKeyboardImg {
+        width: 350px; /* Moderate image size for tablet */
+        margin: 2rem auto; /* Center image and add spacing */
+    }
+}

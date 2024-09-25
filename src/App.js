@@ -1,23 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Home from "./Components/Home";
+import "bootstrap/dist/css/bootstrap.min.css";
+import NavigationBar from "./Components/NavigationBar";
+import Footer from "./Components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ServiceDigitalMarketing from "./Components/ServiceDigitalMarketing";
+import AboutUs from "./Components/AboutUs";
+import ServiceWebsite from "./Components/ServiceWebsite";
+import ServiceSaas from "./Components/ServiceSaas";
+import HomePage from "./Components/HomePage";
+import Sitemap from "./Components/Sitemap";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <NavigationBar />
+        <Routes>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/Service/DigitalMarketing"
+            element={<ServiceDigitalMarketing />}
+          />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route
+            path="/Service/Website-Developement"
+            element={<ServiceWebsite />}
+          />
+          <Route
+            path="/Service/Software-as-a-Service"
+            element={<ServiceSaas />}
+          />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }

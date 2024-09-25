@@ -1,0 +1,285 @@
+
+
+  .serviceSaasFirstRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 3rem;
+    gap: 3rem;
+    
+  }
+  .serviceSaasFirstRow h1{
+    font-size:3rem;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .serviceSaasLeftSnake,.serviceSaasRightSnake{
+    display: none;
+    width: 4.685rem;
+  }
+  .serviceSaasFirstRow h1 span{
+  color: var(--primaryColor);
+  }
+  .serviceSaasSecondRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spacing between images and section */
+    margin: 3rem 3rem;
+    gap: 2rem; /* Adjust the space between elements */
+  
+  }
+  .serviceSaasSecondRow img{
+    width: 16.25rem;
+  }
+  .serviceSaasSecondRowParagraphAndButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center-align the text in the paragraph */
+  
+  }
+  .serviceSaasSecondRowParagraphAndButton p{
+    text-align:justify;
+    color: #333; /* Standard text color */
+    line-height: 1.6;
+   
+  
+  }
+  
+  .serviceSaasSecondRowParagraphAndButton button{
+    margin: 0.325rem auto;
+    color: white;
+    background-color: var(--primaryColor);
+    border: none;
+    padding: 0.625rem 2.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--primaryColor);
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+  }
+  .serviceSaasSecondRowParagraphAndButton button:hover{
+    background-color: white;
+    color: var(--primaryColor);
+  
+  }
+  .serviceSaasThirdRowImagesContainer{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 1rem; /* Add spacing between images */
+    margin: -2rem 3rem;
+  }
+  .serviceSaasThirdRowImagesContainer img{
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .serviceSaasRevenueImg{
+  width: 18.75rem;
+  height: auto;
+  margin-top: -6.25rem;
+  }
+  .serviceSaasAnalyticsImg{
+    width:31.25rem;
+    height: auto;
+  }
+  .serviceSaasStatsImg{
+    margin-top: -6.25rem;
+    width: 18.75rem;
+    height: auto;
+  }
+  .serviceSaasFourthRowHeading{
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+  .serviceSaasFourthRowHeading span{
+    color: var(--primaryColor);
+  }
+  .serviceSaasMarketingImg {
+    width: 100px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+}
+  .serviceSaasFourthRow{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    margin: 0rem 3rem ;
+}
+.serviceSaasFourthRow p{
+  color: #666; 
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Choose a clean, modern font */
+}
+.serviceSaasFourthRow section {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text */
+  margin: 15px; /* Add spacing between sections */
+}
+.serviceSaasFourthRowIndividuallParagraph{
+  font-size: 1rem; /* Slightly larger font for emphasis */
+    line-height: 1.6; /* Improved line spacing for readability */
+    color: #555; /* Dark gray color for a softer look */
+    margin:0.5rem 0; /* Vertical spacing above and below the paragraph */
+    padding: 0.75rem 1.5rem; /* Padding for breathing space */
+    background-color: #f3f3f3; /* Light background to highlight the text */
+    border-left: 4px solid var(--primaryColor); /* Blue left border for emphasis */
+    border-radius: 4px; /* Rounded corners */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    text-align: justify; /* Justified text for a clean look */
+}
+.serviceSaasSecondRowSecondColumnBox {
+  margin: 3rem  0;
+  background-color: white; /* White background for the card */
+  padding: 0.625rem;
+  border-radius: 10px; /* Slightly rounded corners for the box */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+  text-align: center; /* Center the content */
+  width:18.75rem; /* Limit width of the box */
+  position: relative; /* To position the image overlapping */
+}
+.serviceSaasSecondRowSecondColumnBox img {
+  border: 3px solid white; /* Border around the image */
+  width: 4.685rem; /* Image size */
+  height: 4.685rem; /* Make it a perfect circle */
+  background-color:var(--primaryColor); /* Green background for the container */
+  padding: 10px; /* Space around the image */
+  border-radius: 50%; /* Fully rounded image container */
+  object-fit: cover; /* Keep the image proportions intact */
+  position: absolute; /* To overlap the card */
+  overflow:visible;
+  top: -2.5rem; /* Position it above the card */
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image exactly */
+}
+.serviceSaasSecondRowSecondColumnBox h6 {
+  margin-top: 1.95rem; /* Add space after the image */
+  font-size: 1.2rem;
+  color: #333; /* Dark color for the heading */
+  font-weight: 600;
+}
+
+.serviceSaasSecondRowSecondColumnBox p {
+  font-size: 1rem; /* Adjust text size */
+  line-height: 1.6;
+  color: #555; /* Dark gray for readability */
+}
+
+@media screen and (max-width: 766px) {
+  .serviceSaasMarketingImg {
+    width: 100px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0.5rem; /* Space between image and text */
+}
+  .serviceSaasFourthRow{
+    margin: 0rem 1.5rem ;
+}
+  .serviceSaasThirdRowImagesContainer {
+    flex-direction: column; /* Stack images vertically */
+    justify-content: center;
+    gap: 0rem; /* Increase spacing between images */
+    margin: 0 1rem; /* Reduce margin for mobile */
+  }
+
+  .serviceSaasRevenueImg, 
+.serviceSaasStatsImg {
+    width: 70%; /* Each image takes 90% of the viewport width */
+    margin-top: 0; /* Remove the negative margin on mobile */
+  }
+  .serviceSaasAnalyticsImg{
+    width: 100%;
+  }
+  .serviceSaasSecondRow {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 0rem;
+    margin: 0.5rem 1.5rem;
+  }
+
+  .serviceSaasSecondRow img {
+    width:9.3rem; /* Smaller image size for tablets */
+  }
+  .serviceSaasSecondRowParagraphAndButton {
+    padding: 0rem 0rem;
+
+  }
+
+  .serviceSaasSecondRowParagraphAndButton p {
+ text-align: justify;
+  }
+
+  .serviceSaasSecondRowParagraphAndButton button {
+  
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem; /* Smaller button size for mobile */
+  }
+  .serviceSaasFirstRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 1.5rem;
+    
+  }
+  .serviceSaasLeftSnake,.serviceSaasRightSnake{
+   display: none;
+  }
+  .serviceSaasFirstRow h1{
+    font-size:1.5rem;
+
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .serviceSaasThirdRowImagesContainer {
+    flex-direction: row; /* Display images in a row */
+    gap: 0.5rem; /* Adjust gap between images */
+    margin: -1rem 2rem; /* Adjust margins for tablet */
+  }
+
+  .serviceSaasRevenueImg, 
+  .serviceSaasStatsImg {
+    width: 20%; /* Reduce size for smaller images */
+    margin-top: -3rem; /* Adjust margin for better alignment */
+  }
+
+  .serviceSaasAnalyticsImg {
+    width: 30%; /* Adjust size for the larger image */
+  }
+  .serviceSaasSecondRow {
+    flex-direction: row; /* Stack elements vertically */
+    margin: 1rem 2.5rem; /* Adjust margin */
+    gap: 0rem;
+  }
+
+  .serviceSaasSecondRow img {
+    width:12.5rem; /* Smaller image size for tablets */
+  }
+  .serviceSaasSecondRowParagraphAndButton {
+    padding: 1rem 1.5rem;
+  }
+
+  .serviceSaasSecondRowParagraphAndButton p {
+    text-align: justify;
+  }
+
+  .serviceSaasSecondRowParagraphAndButton button {
+
+    padding: 0.7rem 2rem;
+    font-size: 1rem;
+  }
+  .serviceSaasFirstRow{
+    margin: 1rem 2.5rem;
+    gap: 2rem;
+    
+  }
+  .serviceSaasLeftSnake,.serviceSaasRightSnake{
+    display: none;
+    width: 3.125rem;
+  }
+  .serviceSaasFirstRow h1{
+    font-size:2.5rem;
+  }
+  
+}

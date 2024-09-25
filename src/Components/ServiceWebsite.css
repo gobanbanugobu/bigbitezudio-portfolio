@@ -1,0 +1,435 @@
+.serviceWebsiteNavbarBack{
+    background-color: black;
+    height:6.85rem;
+}
+.serviceWebsiteFirstRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem 0rem 2rem;
+
+}
+.serviceWebsiteFirstRow h1{
+font-size:3.5rem ;
+line-height: 1.2;
+
+}
+.serviceWebsiteFirstRow span{
+    color: var(--primaryColor);
+    }
+.ServiceWebsiteTechImage{
+   max-width: 350px;
+    height: auto;
+    width: 100%;
+}
+.serviceWebsiteFirstRowParagraph{
+    color: #333; /* Darker text for readability */
+      text-align: center; /* Center the paragraph content */
+      font-size: 1.15rem;
+      padding: 0px 3rem;
+
+}
+
+.serviceWebsiteSecondRowOverAllGreenContainer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--primaryColor);
+    align-items: center;
+    padding: 2.5rem 1rem 0.5rem 3rem;
+    gap: 1rem;
+
+}
+.serviceWebsiteSecondRowFirstColumn {
+    max-width: 500px;
+    color: white;
+    
+
+}
+.serviceWebsiteSecondRowFirstColumn h6{
+  font-size: 1.2;
+  font-weight: 700;
+  margin-bottom: 1rem; /* Add spacing below */
+}
+.serviceWebsiteSecondRowFirstColumn h6 span{
+   color: black;
+  }
+.serviceWebsiteSecondRowFirstColumn h2{
+ font-size: 2.5rem;
+ color:white; /* Dark color for contrast */
+ margin-bottom: 1rem; /* Spacing below heading */
+ font-weight: bold;
+ text-align: center;
+}
+
+.serviceWebsiteSecondRowFirstColumn h2 span{
+    color:black;
+}
+.serviceWebsiteSecondRowFirstColumn p{
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.4; /* Improve readability */
+    margin-bottom: 2rem; /* Space before button */
+    
+}
+.serviceWebsiteSecondRowFirstColumn Button {
+  background-color: white; /* Button background color */
+    color: var(--primaryColor); /* Button text color */
+    font-size: 1rem;
+    padding:0.625rem 3.125rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid var(--primaryColor);
+}
+
+.serviceWebsiteSecondRowFirstColumn Button:hover {
+   background-color: var(--primaryColor);
+   color: white; /* Invert text color on hover */
+   border: 1px solid white;
+ 
+}
+.serviceWebsiteSecondRowSecondColumn {
+    display: flex;
+    flex-direction: column;
+
+  }
+.serviceWebsiteSecondRowSecondColumnBox {
+    background-color: white; /* White background for the card */
+    padding: 0.625rem;
+    border-radius: 10px; /* Slightly rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    text-align: center; /* Center the content */
+    width:18.75rem; /* Limit width of the box */
+    position: relative; /* To position the image overlapping */
+}
+
+.serviceWebsiteSecondRowSecondColumnBox img {
+    border: 3px solid white; /* Border around the image */
+    width: 4.685rem; /* Image size */
+    height: 4.685rem; /* Make it a perfect circle */
+    background-color:var(--primaryColor); /* Green background for the container */
+    padding: 10px; /* Space around the image */
+    border-radius: 50%; /* Fully rounded image container */
+    object-fit: cover; /* Keep the image proportions intact */
+    position: absolute; /* To overlap the card */
+    overflow:visible;
+    top: -2.5rem; /* Position it above the card */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Center the image exactly */
+}
+
+.serviceWebsiteSecondRowSecondColumnBox h6 {
+    margin-top: 1.95rem; /* Add space after the image */
+    font-size: 1.2rem;
+    color: #333; /* Dark color for the heading */
+    font-weight: 600;
+    
+}
+
+.serviceWebsiteSecondRowSecondColumnBox p {
+    font-size: 0.90rem; /* Adjust text size */
+    line-height: 1.6;
+    color: #555; /* Dark gray for readability */
+}
+.serviceWebsiteSecondRowSecondColumnBoxAlignment{
+    display: flex;
+  margin:1.75rem 1rem;
+  gap: 30px;
+}
+.webCreator{
+    width: 500px;
+}
+.serviceWebsiteThirdRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem  6.5rem;
+    gap: 5rem;
+}
+
+.serviceWebsiteThirdRow h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 700;
+    text-align: center;
+}
+
+.serviceWebsiteThirdRow h1 span {
+    color:var(--primaryColor); /* Primary brand color */
+    font-weight: bold;
+}
+
+.serviceWebsiteThirdRow p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.serviceWebsiteThirdRow b {
+    color: black;
+}
+
+.webCreator {
+    max-width: 500px; /* Adjust as per image size */
+    width: 100%;
+    height: auto;
+
+}
+.thirdRowParagraph {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 3rem 6.5rem;
+}
+
+.thirdRowParagraph span {
+    color:var(--primaryColor); /* Highlight the brand name with your primary color */
+    font-weight: bold;
+}
+.serviceWebsiteHr{
+    display: none;
+}
+.websiteGreenVerticalRectangleContainer {
+    display: none;
+    padding: 0 13.75rem; /* 220px to rem */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: -1; /* Position behind the card rows */
+    width: calc(100% - 6.25rem); /* Full width minus padding (100px to rem) */
+    transform: translateY(-50%); /* Adjust to center the lines */
+    pointer-events: none; /* Ensure lines do not interfere with interactions */
+}
+
+.websiteGreenVerticalRectangle {
+    display: none;
+    width: 1.875rem; /* 30px to rem */
+    height: 30rem; /* 750px to rem */
+    background-color: var(--primaryColor); /* The primary color of the line */
+    margin-bottom: 5rem;
+}
+
+
+
+@media screen and (max-width:767px) {
+    .serviceWebsiteHr{
+        display:block;
+    }
+    
+    .thirdRowParagraph {
+        font-size: 0.9rem; /* Slightly smaller font for mobile devices */
+        margin: 1rem 1.5rem;
+    }
+    .serviceWebsiteThirdRow {
+        flex-direction: column;
+        margin: 1rem 1.5rem;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .serviceWebsiteThirdRow h1 {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .serviceWebsiteThirdRow p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .webCreator {
+        max-width: 300px;
+    }
+
+
+    .serviceWebsiteSecondRowOverAllGreenContainer {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 2rem 1rem; /* Reduce padding for mobile */
+    }
+
+    .serviceWebsiteSecondRowFirstColumn {
+        max-width: 100%; /* Allow full width for mobile */
+        text-align: center; /* Center text for mobile */
+        margin-bottom: 1.25rem; /* Add space below for second column */
+    }
+
+    .serviceWebsiteSecondRowFirstColumn h2 {
+        font-size: 2rem; /* Reduce heading size */
+        margin: 1.5rem 0rem;
+    }
+
+    .serviceWebsiteSecondRowFirstColumn p {
+        font-size: 1rem; /* Reduce paragraph size for mobile */
+        margin-bottom: 1.5rem; /* Adjust margin for mobile */
+    }
+
+    .serviceWebsiteSecondRowFirstColumn Button {
+        padding:0.625rem 3.125rem; /* Reduce button padding for mobile */
+        font-size: 0.9rem; /* Slightly smaller font size */
+        margin-bottom: 1.5rem;
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox {
+        width: 100%; /* Full width for mobile */
+        margin-bottom: 2rem; /* Space between boxes */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBoxAlignment {
+        flex-direction: column; /* Stack boxes vertically */
+        gap: 1.25rem; /* Adjust gap between boxes */
+        margin: 0.5rem 0rem;
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox img {
+        width:3.75rem; /* Smaller image */
+        height:3.75rem; /* Smaller image */
+        top: -1.875rem; /* Adjust image positioning */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox h6 {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox p {
+        font-size: 0.9rem; /* Smaller text size */
+        line-height: 1.4; /* Adjust line height for readability */
+    }
+    .serviceWebsiteFirstRowParagraph{
+        font-size: 1rem;
+          padding: 0px 1rem;
+          }
+     .serviceWebsiteNavbarBack{
+        height:5.3125rem;
+    }
+    .serviceWebsiteFirstRow{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+        padding: 1rem 1rem 0rem 1rem;
+    
+    }
+    .serviceWebsiteFirstRow h1{
+        font-size:1.75rem ;
+    }
+    .ServiceWebsiteTechImage{
+        max-width: 300px;
+        margin-left: 1.85rem; /* Add spacing between the text and image */
+
+     }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .serviceWebsiteThirdRow {
+        flex-direction:row; /* Stack the elements vertically */
+        margin: 1.5rem 3rem; /* Adjusted margins for tablets */
+        gap: 3rem; /* Adjusted gap between elements */
+        text-align: center;
+    }
+
+    .serviceWebsiteThirdRow h1 {
+        font-size: 1.8rem; /* Slightly smaller heading font */
+        line-height: 1.4;
+        text-align: center; /* Ensure center alignment for heading */
+    }
+
+    .serviceWebsiteThirdRow h1 span {
+        color: var(--primaryColor);
+        font-weight: bold;
+    }
+
+    .serviceWebsiteThirdRow p {
+        font-size: 0.95rem; /* Adjusted paragraph font size */
+        color: #666;
+        line-height: 1.6;
+        text-align: justify; /* Justified text alignment */
+        padding: 0 1rem; /* Added padding for a clean look */
+    }
+
+    .webCreator {
+        max-width: 350px; /* Adjusted image size for this screen range */
+        width: 100%;
+        height: auto;
+        margin: 0 auto; /* Center the image */
+    }
+    .serviceWebsiteSecondRowOverAllGreenContainer {
+        flex-direction: row; /* Maintain horizontal layout */
+        padding: 2rem; /* Adjust padding for tablets */
+    }
+
+    .serviceWebsiteSecondRowFirstColumn {
+        max-width: 50%; /* Limit width for tablet */
+        text-align: left; /* Align text to the left */
+        margin-bottom: 0; /* Remove bottom margin */
+    }
+
+    .serviceWebsiteSecondRowFirstColumn h2 {
+        font-size: 2.2rem; /* Slightly larger heading */
+        margin: 1.5rem 0; /* Adjust margins */
+    }
+
+    .serviceWebsiteSecondRowFirstColumn p {
+        font-size: 1.1rem; /* Slightly larger paragraph size */
+        margin-bottom: 1.5rem; /* Maintain margin */
+    }
+
+    .serviceWebsiteSecondRowFirstColumn Button {
+        padding: 0.75rem 2.5rem; /* Adjust button padding */
+        font-size: 1rem; /* Maintain font size */
+        margin-bottom: 1rem; /* Add space below button */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox {
+        width: 45%; /* Adjust width for tablet */
+        margin-bottom: 1.5rem; /* Space between boxes */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBoxAlignment {
+        flex-direction: row; /* Maintain horizontal alignment */
+        gap: 1.25rem; /* Adjust gap */
+        margin: 1.5rem 0; /* Maintain margin */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox img {
+        width: 4.375rem; /* Slightly larger image */
+        height: 4.375rem; /* Maintain aspect ratio */
+        top: -2.18rem; /* Adjust positioning */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox h6 {
+        font-size: 1.1rem; /* Slightly larger font size */
+    }
+
+    .serviceWebsiteSecondRowSecondColumnBox p {
+        font-size: 0.95rem; /* Slightly larger text size */
+        line-height: 1.5; /* Adjust line height for readability */
+    }
+    .serviceWebsiteFirstRowParagraph{
+          font-size: 1.1rem;
+          padding: 1rem 3rem;
+    
+    }
+    .serviceWebsiteFirstRow {
+        flex-direction: row; /* Place text and image side by side */
+        justify-content: center; /* Center content horizontally */
+        text-align: center;
+    }
+
+    .serviceWebsiteFirstRow h1 {
+        font-size: 3rem; /* Slightly larger font for tablet screens */
+    }
+
+    .ServiceWebsiteTechImage {
+        max-width: 350px; /* Adjust image size for tablet view */
+        margin-left: 20px; /* Add space between text and image */
+        margin-top: 0;
+    }
+
+}

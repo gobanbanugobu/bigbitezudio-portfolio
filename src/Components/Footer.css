@@ -1,0 +1,245 @@
+@keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .footerDiv {
+    /* background-image: url("../Images/footerImage.png"); */
+    background-color: #1C1C1C;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 1.875rem 8.75rem; /* 30px 140px -> 1.875rem 8.75rem */
+    position: relative; /* Ensure positioning context for child elements */
+    overflow: hidden; /* Prevents overflow issues */
+    border-radius: 0px;
+    margin-top: 1.875rem; /* 30px -> 1.875rem */
+    margin-bottom: 0rem; /* 30px -> 1.875rem */
+  }
+  
+  .footerHeading {
+    font-size: 1.5625rem; 
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0.9375rem; /* 15px -> 0.9375rem */
+    text-transform: uppercase;
+  }
+  
+  /* Custom styling for the footer list */
+  .footerList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerList li {
+    font-size: 1.125rem; /* 18px -> 1.125rem */
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.5625rem; /* 25px -> 1.5625rem */
+    font-weight: 500;
+  }
+  
+  /* Custom bullet points using icons */
+  .footerList li::before {
+    color: var(--primaryColor); /* Replace with your primary color */
+    font-size: 1rem; /* 16px -> 1rem */
+    position: absolute;
+    left: 0;
+    top: 0.3125rem; /* 5px -> 0.3125rem */
+  }
+  
+  /* Hover effect */
+  .footerList li a:hover {
+    color: var(--primaryColor); /* Replace with your primary color */
+    transition: color 0.3s ease;
+  }
+  
+  .footerList li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footerImages {
+    position: relative;
+    width: 18.75rem; /* 300px -> 18.75rem */
+    height: 18.75rem; /* 300px -> 18.75rem */
+    margin: auto;
+    margin-top: 4.375rem;
+    margin-left: 3.5rem; 
+  }
+  
+  .bigbitezudioLogo {
+    position: absolute;
+    width: 4.375rem; /* 70px -> 4.375rem */
+    height: 4.375rem; /* 70px -> 4.375rem */
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.0625rem 0.3125rem rgba(0, 0, 0, 0.2); /* 1px 5px -> 0.0625rem 0.3125rem */
+    transition: transform 0.3s ease;
+  }
+  
+  .bigbitezudioLogo:hover {
+    transform: scale(1.1);
+  }
+  
+  .bigbitezudioLogo img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+  
+  /* Positioning logos */
+  .center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5rem; /* 80px -> 5rem */
+    height: 5rem; /* 80px -> 5rem */
+  }
+  
+  .top { top: 0; left: 50%; transform: translateX(-50%); }
+  .topRight { top: 15%; right: 15%; }
+  .right { top: 50%; right: 0; transform: translateY(-50%); }
+  .bottomRight { bottom: 15%; right: 15%; }
+  .bottom { bottom: 0; left: 50%; transform: translateX(-50%); }
+  .bottomLeft { bottom: 15%; left: 15%; }
+  .left { top: 50%; left: 0; transform: translateY(-50%); }
+  .topLeft { top: 15%; left: 15%; }
+  
+  .companyCaption {
+    position: relative;
+    font-size: 0.9375rem; /* 15px -> 0.9375rem */
+    text-align: center;
+    margin: 1.25rem; /* 20px -> 1.25rem */
+    color: white;
+  }
+  
+  .moveUp {
+    position: fixed;
+    z-index: 1;
+    bottom: 1.25rem; /* 20px -> 1.25rem */
+    right: 1.25rem; /* 20px -> 1.25rem */
+    border-radius: 50%;
+    border: none;
+    padding: 0.625rem; /* 10px -> 0.625rem */
+    cursor: pointer;
+    width: 3.125rem; /* 50px -> 3.125rem */
+    height: 3.125rem; /* 50px -> 3.125rem */
+    transition: transform 0.2s;
+  }
+  
+  .moveUp:hover {
+    animation: jump 0.5s ease-in-out;
+  }
+  
+  @media screen and (max-width:766px) {
+  
+  
+    .footerHeading {
+      font-size: 1.125rem; /* 18px -> 1.125rem */
+    }
+    
+    .footerList li {
+      font-size: 1rem; /* 16px -> 1rem */
+    }
+    
+    .footerDiv {
+      padding: 3.125rem 1.25rem; /* 50px 20px -> 3.125rem 1.25rem */
+      height: auto; /* Allow height to adjust based on content */
+      margin-top: 0.9375rem; /* 15px -> 0.9375rem */
+    }
+    
+    .footerImages {
+      width: 13.75rem; /* 220px -> 13.75rem */
+      height: 13.75rem; /* 220px -> 13.75rem */
+      margin-left: 6rem; 
+
+    }
+    
+    .bigbitezudioLogo {
+      width: 5rem; /* 80px -> 5rem */
+      height: 5rem; /* 80px -> 5rem */
+    }
+    
+    .bigbitezudioLogo img {
+      width: 60%;
+      height: 60%; /* Adjust image size within the logo */
+    }
+    
+    .center {
+      width: 4.375rem; /* 70px -> 4.375rem */
+      height: 4.375rem; /* 70px -> 4.375rem */
+    }
+    
+    .top, .bottom, .left, .right,
+    .topLeft, .topRight, .bottomLeft, .bottomRight {
+      width: 3.4375rem; /* 55px -> 3.4375rem */
+      height: 3.4375rem; /* 55px -> 3.4375rem */
+    }
+    
+    .moveUp {
+      display: none;
+    }
+    
+  }
+
+  @media screen and ( min-width:766px) and (max-width: 1024px) {
+    .footerHeading {
+      font-size: 1.375rem; /* Adjust based on preference */
+    }
+  
+    .footerList li {
+      font-size: 1.125rem; /* Adjust based on preference */
+    }
+  
+    .footerDiv {
+      padding: 2.5rem 6.25rem; /* Adjust padding for tablets and smaller desktops */
+      margin-top: 1.5rem; /* Adjust top margin */
+      width: 100vw;
+    }
+  
+    .footerImages {
+      width: 16.25rem; /* Adjust width for tablets and smaller desktops */
+      height: 16.25rem; /* Adjust height for tablets and smaller desktops */
+      margin-left: 2.5rem; /* Adjust margin for better alignment */
+    }
+  
+    .bigbitezudioLogo {
+      width: 4.5rem; /* Adjust width */
+      height: 4.5rem; /* Adjust height */
+    }
+  
+    .bigbitezudioLogo img {
+      width: 65%; /* Adjust image size within the logo */
+      height: 65%; /* Adjust image size within the logo */
+    }
+  
+    .center {
+      width: 4.875rem; /* Adjust width */
+      height: 4.875rem; /* Adjust height */
+    }
+  
+    .top, .bottom, .left, .right,
+    .topLeft, .topRight, .bottomLeft, .bottomRight {
+      width: 3.75rem; /* Adjust width */
+      height: 3.75rem; /* Adjust height */
+    }
+  
+    .moveUp {
+      display:none; /* Show the button on tablets and smaller desktops */
+    }
+  }
+  
+
+  
